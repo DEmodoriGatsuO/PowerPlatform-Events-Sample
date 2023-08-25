@@ -19,8 +19,10 @@
 
 
 ## 環境の準備など
-日本マイクロソフト株式会社様の、Power Apps サンプルアプリを公開されているページの説明が非常に丁寧でわかりやすい内容となっております。<br>
+日本マイクロソフト株式会社様の、Power Apps サンプルアプリを公開されているページの説明が<br>非常に丁寧でわかりやすいです。<br>
 是非そちらを参考にしてみてください。
+
+https://github.com/microsoft/PowerApps-Sample-Apps-Japan/tree/main/001_SystemPortal
 
 ## FAQ
 * Q. 自由に使って問題ないですか?
