@@ -1,0 +1,2 @@
+# PowerPlatform-Events-Sample
+Power AppsやPower Automateを中心としたイベントのサンプルや、当日に使うアセットを格納するリポジトリです
