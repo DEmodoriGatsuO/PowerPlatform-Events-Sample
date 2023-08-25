@@ -1,7 +1,7 @@
 # AI Builder GPT
 
 ## Event
-このアプリは、2023年8月25日に実施した「[Power Apps Special event！Azure OpenAI Chatアプリを作ろう！]」(https://gatsuo.connpass.com/event/291029/)の<br>
+このアプリは、2023年8月25日に実施した[Power Apps Special event！Azure OpenAI Chatアプリを作ろう！](https://gatsuo.connpass.com/event/291029/)の<br>
 イベント内で作成したサンプルになります
 
 <br>
