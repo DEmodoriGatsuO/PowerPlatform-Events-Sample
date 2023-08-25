@@ -37,3 +37,5 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 
 # 作成手順
 
+## ラーニングパス
+ - [AI Builder での GPT によるテキストの作成](https://learn.microsoft.com/ja-jp/training/modules/ai-builder-text-generation/)
