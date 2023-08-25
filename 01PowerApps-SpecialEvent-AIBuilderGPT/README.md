@@ -36,6 +36,15 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 <br>
 
 # 作成手順
+## カラー（サンプル）
+|コントロール|Hex|RGBA
+|---|---|---
+|Header|1072BC|RGBARGBA(16, 114, 188, 1)
+|Sidebar|000000|RGBA(0, 0, 0, 1)
+|Title|FA9B70|RGBA(250, 155, 112, 1)
+|Main|343541|RGBA(52, 53, 65, 1)
+
+
 
 ## ラーニングパス
  - [AI Builder での GPT によるテキストの作成](https://learn.microsoft.com/ja-jp/training/modules/ai-builder-text-generation/)
