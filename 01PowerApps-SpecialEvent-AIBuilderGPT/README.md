@@ -7,7 +7,7 @@
 ![完成イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/app_image.png)
 
 <br>
-READMEでは作成手順を合わせて紹介します。
+READMEでは作成手順も含めて解説します。
 <br>
 
 ### 注意点
