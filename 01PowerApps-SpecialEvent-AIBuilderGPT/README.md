@@ -71,9 +71,72 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
     1. Widthを`App.Width * 0.2` or `Parent.Width * 0.2`に設定
     1. 塗りつぶしで黒にします（RGBA(0,0,0,0)）
 
+### 2. 1で配置した水平コンテナーに、2つの垂直コンテナーを入れます
+#### サイドバー用の設定をしましょう（左側のコンテナ
+1. Sidebar用の垂直コンテナー
+    1. 幅(伸縮可能)をオフにします
+    1. Widthを`App.Width * 0.2` or `Parent.Width * 0.2`に設定
+    1. 塗りつぶしで黒にします（RGBA(0,0,0,0)）
 
 
+### 3. 2で挿入した左側のコンテナー(メインセクション)に3つの水平コンテナーを挿入します
+1. 最上部は`ヘッダー用``
+    1. 高さ(伸縮可能)をオフにします
+    1. Heightを`App.Height / 8` or `Parent.Height / 8`に設定
+    1. 塗りつぶしを青にします
+1. ヘッダーにテキストラベルを挿入
+    1. HeightをParent.Heightに
+    1. WidthをParent.Widthに
+    1. Fontは好きなものに、サイズも好みで（例はLato 40）
+    1. Colorは橙色に
+1. 真ん中のコンテナ
+    1. Heightを`App.Height / 8 * 6` or `Parent.Height / 8 * 6`
+    1. 塗りつぶしを灰色に
+1. 真ん中のコンテナに高さが伸縮可能なギャラリーを挿入
 
+1. フッターとなるコンテナ
+    1. 高さ(伸縮可能)をオフにします
+    1. Heightを`App.Height / 8` or `Parent.Height / 8`に設定
+    1. 塗りつぶしを灰色にします
+
+1. テキストインプットとアイコンを挿入
+
+1. サイドバーの設定
+    1. パディングを40に
+    1. ボタンを追加
+    1. ゴミ箱アイコンを追加
+    1. ギャラリーを追加
+
+## データの追加
+- GPT役の画像 - いらすとやの画像を利用
+- Office 365 ユーザーコネクタ
+- AI Builder
+
+## 関数を挿入
+### 送信アイコン
+```yaml
+If(TextInput1.Text <> "",
+    UpdateContext({_prompt:TextInput1.Text});
+    Collect(colChat,{_img:_photo,_text:TextInput1.Text});
+    // AI Builderが使える場合
+    // Power Apps
+    Collect(colChat,{_img:ai_computer_sousa_robot,_text:'GPT でテキストを作成する'.Predict(_prompt).Text});
+    //// Power Automate
+    // Collect(colChat,{_img:ai_computer_sousa_robot,_text:GPTbyAIBuilder.Run(TextInput1.Text).result});
+    Reset(TextInput1);
+);
+``` 
+
+### + New Chatボタン
+```yaml
+Collect(colHistory,{col:colChat});
+Clear(colChat);
+``` 
+
+### アプリのOnVisibleに
+```yaml
+UpdateContext({_photo:Office365ユーザー.UserPhotoV2(User().Email)});
+```
 
 ## ラーニングパス
  - [AI Builder での GPT によるテキストの作成](https://learn.microsoft.com/ja-jp/training/modules/ai-builder-text-generation/)
