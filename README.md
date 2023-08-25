@@ -15,7 +15,8 @@
 
 |Apps|Event Name|Date|URL
 |---|---|---|---
-|AIBuilder GPT|Power Apps Special event！Azure OpenAI Chatアプリを作ろう！|2023.08.25|https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/media/gatsuo.jpg
+|AIBuilder GPT|Power Apps Special event！Azure OpenAI Chatアプリを作ろう！|2023.08.25|[Power Apps Special event！Azure OpenAI Chatアプリを作ろう！
+](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/tree/main/01PowerApps-SpecialEvent-AIBuilderGPT)
 
 
 ## 環境の準備など
