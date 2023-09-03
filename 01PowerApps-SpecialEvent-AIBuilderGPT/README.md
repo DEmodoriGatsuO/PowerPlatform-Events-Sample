@@ -11,6 +11,10 @@
 
 ![完成イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/app_image.png)
 
+### Slide
+
+https://www.slideshare.net/ssuser36babb1/powerappsazureopenaichatpptx
+
 <br>
 READMEでは作成手順も含めて解説します。
 <br>
