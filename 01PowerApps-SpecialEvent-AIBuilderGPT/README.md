@@ -54,6 +54,9 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 |Main|343541|RGBA(52, 53, 65, 1)
 
 ## 大枠
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide01.PNG)
+
 1. 水平コンテナーというコントロールを使い、画面の横幅を 2 : 8に分割する
     - 2の部分がサイドバー、8の部分がメインセクション
 1. サイドバー(2)の部分に、垂直コンテナーを挿入する
@@ -65,7 +68,14 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 4. メインセクションをアレンジする
 5. サイドバーをアレンジする
 
+### サンプルの色について
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide02.PNG)
+
 ### 1. 画面いっぱいに広がる水平コンテナーを挿入する
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide03.PNG)
+
 1. X,Yを0に変更
 1. HeightをApp.Height
 1. WidthをApp.Width
@@ -75,20 +85,18 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 
 ### 2. 1で配置した水平コンテナーに、2つの垂直コンテナーを入れます
 #### サイドバー用の設定をしましょう（左側のコンテナ
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide04.PNG)
+
 1. Sidebar用の垂直コンテナー
     1. 幅(伸縮可能)をオフにします
     1. Widthを`App.Width * 0.2` or `Parent.Width * 0.2`に設定
     1. 塗りつぶしで黒にします（RGBA(0,0,0,0)）
-
-### 2. 1で配置した水平コンテナーに、2つの垂直コンテナーを入れます
-#### サイドバー用の設定をしましょう（左側のコンテナ
-1. Sidebar用の垂直コンテナー
-    1. 幅(伸縮可能)をオフにします
-    1. Widthを`App.Width * 0.2` or `Parent.Width * 0.2`に設定
-    1. 塗りつぶしで黒にします（RGBA(0,0,0,0)）
-
 
 ### 3. 2で挿入した左側のコンテナー(メインセクション)に3つの水平コンテナーを挿入します
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide05.PNG)
+
 1. 最上部は`ヘッダー用``
     1. 高さ(伸縮可能)をオフにします
     1. Heightを`App.Height / 8` or `Parent.Height / 8`に設定
@@ -116,13 +124,34 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
     1. ゴミ箱アイコンを追加
     1. ギャラリーを追加
 
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide06.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide07.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide08.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide09.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide10.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide11.PNG)
+
+
 ## データの追加
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide12.PNG)
+
+
 - GPT役の画像 - いらすとやの画像を利用
 - Office 365 ユーザーコネクタ
 - AI Builder
 
 ## 関数を挿入
 ### 送信アイコン
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide13.PNG)
+
+
 ```yaml
 UpdateContext({_prompt:TextInput1.Text});
 Collect(colChat,{_img:_photo,_text:TextInput1.Text});
@@ -135,15 +164,40 @@ Reset(TextInput1);
 ``` 
 
 ### + New Chatボタン
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide14.PNG)
+
 ```yaml
 Collect(colHistory,{col:colChat});
 Clear(colChat);
 ``` 
 
+### galHistoryで過去のChatを呼び戻す
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide15.PNG)
+
+```yaml
+ClearCollect(colChat,ThisItem.col);
+```
+
+### galHistoryの履歴を削除（ごみ箱のアイコン）
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide16.PNG)
+
+```yaml
+Clear(colHistory);
+```
+
 ### アプリのOnVisibleに
 ```yaml
 UpdateContext({_photo:Office365ユーザー.UserPhotoV2(User().Email)});
 ```
+
+### ギャラリーのデータソース
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide17.PNG)
+
+![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide18.PNG)
 
 ## ラーニングパス
  - [AI Builder での GPT によるテキストの作成](https://learn.microsoft.com/ja-jp/training/modules/ai-builder-text-generation/)
