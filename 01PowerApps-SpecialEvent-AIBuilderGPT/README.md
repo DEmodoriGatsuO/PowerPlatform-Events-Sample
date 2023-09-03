@@ -97,7 +97,7 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 
 ![イメージ](https://github.com/DEmodoriGatsuO/PowerPlatform-Events-Sample/blob/main/01PowerApps-SpecialEvent-AIBuilderGPT/asset/Slide/slide05.PNG)
 
-1. 最上部は`ヘッダー用``
+1. 最上部は`ヘッダー用`
     1. 高さ(伸縮可能)をオフにします
     1. Heightを`App.Height / 8` or `Parent.Height / 8`に設定
     1. 塗りつぶしを青にします
