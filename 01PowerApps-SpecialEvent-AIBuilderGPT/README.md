@@ -118,16 +118,14 @@ Power Platform 管理センターで、`米国`の`開発者`環境を作成し�
 ## 関数を挿入
 ### 送信アイコン
 ```yaml
-If(TextInput1.Text <> "",
-    UpdateContext({_prompt:TextInput1.Text});
-    Collect(colChat,{_img:_photo,_text:TextInput1.Text});
-    // AI Builderが使える場合
-    // Power Apps
-    Collect(colChat,{_img:ai_computer_sousa_robot,_text:'GPT でテキストを作成する'.Predict(_prompt).Text});
-    //// Power Automate
-    // Collect(colChat,{_img:ai_computer_sousa_robot,_text:GPTbyAIBuilder.Run(TextInput1.Text).result});
-    Reset(TextInput1);
-);
+UpdateContext({_prompt:TextInput1.Text});
+Collect(colChat,{_img:_photo,_text:TextInput1.Text});
+// AI Builderが使える場合
+// Power Apps
+Collect(colChat,{_img:ai_computer_sousa_robot,_text:'GPT でテキストを作成する'.Predict(_prompt).Text});
+//// Power Automate
+// Collect(colChat,{_img:ai_computer_sousa_robot,_text:GPTbyAIBuilder.Run(TextInput1.Text).result});
+Reset(TextInput1);
 ``` 
 
 ### + New Chatボタン
