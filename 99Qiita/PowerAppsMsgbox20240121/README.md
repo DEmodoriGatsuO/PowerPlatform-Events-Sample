@@ -6,7 +6,7 @@ https://qiita.com/DEmodoriGatsuO/items/c0030ead94a1bec867f1
 
 ## VBAのMsgBox 関数
 - [VBAのMsgBox 関数](https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/msgbox-function)
-- 
+
 https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/msgbox-function
 
 ```
@@ -152,7 +152,8 @@ Table(
 
 
 # コンポーネント
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T7cuxfuCMBw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>](https://www.youtube.com/embed/T7cuxfuCMBw)
+
 
 ## 入出力
 まずはコンポーネントに渡す`カスタム プロパティ`を下記のとおり、設定しました。
