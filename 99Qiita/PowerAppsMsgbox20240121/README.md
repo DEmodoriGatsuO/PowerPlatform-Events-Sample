@@ -152,8 +152,7 @@ Table(
 
 
 # コンポーネント
-[<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>](https://www.youtube.com/embed/T7cuxfuCMBw)
-
+https://youtu.be/T7cuxfuCMBw
 
 ## 入出力
 まずはコンポーネントに渡す`カスタム プロパティ`を下記のとおり、設定しました。
@@ -167,11 +166,6 @@ Table(
 |MsgBoxButtons|レコード|メッセージボックスのボタンを設定|
 |pwIconStyle|テキスト|`MsgBoxIconStyle`のキー値|
 |MsgBoxIconStyle|レコード|アイコンの設定|
-
-:::note
-カスタム プロパティは`表示名`、`名前`が存在しますが、
-作者は英語で、かつ内容も全て統一しています。
-:::
 
 ### ■ 出力
 |Name|データ型|値の説明|
@@ -187,12 +181,3 @@ Table(
  - Notレスポンシブ対応
      - 横長の画面対応想定
      - Smallサイズには小さすぎる課題があります。
-
-丸一日粘りましたが、本日はギブアップです・・・。
-**改善策を模索してみたいと思います！**
-
-# おわりに
-使いまわしによって開発が加速できると、本当に素晴らしいですね！
-Power Apps全然ﾜｶﾗﾝ・・・
-
-**良いPower Lifeを！**
