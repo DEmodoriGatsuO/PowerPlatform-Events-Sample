@@ -40,63 +40,6 @@ https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-h
 |pwYesNo|はい、いいえ 
 |pwRetryCancel|再試行、キャンセル
 
-```plaintext:MsgBoxButtons　- 定数に対するレコード
-LookUp(
-        Table(
-        {
-            Constant: "pwOKOnly",
-            Buttons: [
-                "OK"
-            ],
-            Description: "OKボタンのみ"
-        },
-        {
-            Constant: "pwOKCancel",
-            Buttons: [
-                "OK",
-                "キャンセル"
-            ],
-            Description: "OK、キャンセル"
-        },
-        {
-            Constant: "pwAbortRetryIgnore",
-            Buttons: [
-                "中止",
-                "再試行",
-                "無視"
-            ],
-            Description:"中止、再試行、無視"
-        },
-        {
-            Constant: "pwYesNoCancel",
-            Buttons: [
-                "はい",
-                "いいえ",
-                "キャンセル"
-            ],
-            Description: "はい、いいえ、キャンセル"
-        },
-        {
-            Constant: "pwYesNo",
-            Buttons: [
-                "はい",
-                "いいえ"
-            ], Description: "はい、いいえ"
-        },
-        {
-            Constant: "pwRetryCancel",
-            Buttons: [
-                "再試行",
-                "キャンセル"
-            ],
-            Description: "再試行、キャンセル"
-        }
-    ),
-    // 後述するキー値で取得
-    Constant = Self.pwMsgBoxStyle
-)
-```
-
 ### アイコンの設定
 四つの種類のアイコンが存在します。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2734332/e6231289-4bd7-2786-4b03-6794d9ad041a.png)
@@ -163,9 +106,7 @@ https://youtu.be/T7cuxfuCMBw
 |MsgBoxTitle|テキスト|メッセージボックスのタイトル|
 |MsgBoxPrompt|テキスト|メッセージボックスの文章|
 |pwOKOnly|テキスト|`MsgBoxButtons`のキー値|
-|MsgBoxButtons|レコード|メッセージボックスのボタンを設定|
 |pwIconStyle|テキスト|`MsgBoxIconStyle`のキー値|
-|MsgBoxIconStyle|レコード|アイコンの設定|
 
 ### ■ 出力
 |Name|データ型|値の説明|
@@ -176,8 +117,6 @@ https://youtu.be/T7cuxfuCMBw
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2734332/d6fe9e42-4ffa-8afa-dace-82300e32af2d.png)
 
 ## Issue
- - コンポーネント内のコントロールに、入力値から狙った値が反映されない
-     - テーブル、レコードに基づく、コントロールの設定が間に合わないケースが多くあります・・・
  - Notレスポンシブ対応
      - 横長の画面対応想定
      - Smallサイズには小さすぎる課題があります。
